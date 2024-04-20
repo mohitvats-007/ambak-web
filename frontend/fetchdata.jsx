@@ -28,8 +28,8 @@ function FetchData() {
     <tr>
       <th scope="col">#</th>
       <th scope="col">id</th>
-      <th scope="col">id</th>
-      <th scope="col">postid</th>
+      <th scope="col">Id</th>
+      <th scope="col">postId</th>
       <th scope="col">Email</th>
     </tr>
   </thead>
