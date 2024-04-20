@@ -1,0 +1,70 @@
+
+.container1{
+    margin: 12px;
+}
+
+.container{
+    padding-top: 6%;
+}
+
+.container2{
+    background-color: rgb(235, 235, 248); 
+    width: 53vw;
+    border: 2px solid rgb(170, 170, 221);
+    border-radius: 11px;
+    margin: 0 auto;
+}
+
+.name{
+    border: 2px solid rgb(196, 205, 254) ;
+    margin: 2px;
+    padding: 6px;
+    border-radius: 7px;
+}
+#button{
+    padding: 10px   90px;
+    background-color: rgb(0, 75, 145);
+    
+    color: white;
+    border-radius: 30px;
+    margin-left: 240px;
+}
+hr{
+    height: 4px;
+    background-color: rgb(16, 35, 238);
+    
+}
+.input1{
+    margin-top: 4px;
+}
+
+
+    #dob{
+        margin-left: 15px;
+    }
+    .email{
+        margin-left: 5px;
+    }
+
+    .profession{
+        margin-left: 25px;
+    }
+    #phonenumber{
+        margin-left: 25px;
+    }
+    .phonenumber{
+        margin-left: 5px;
+    }
+    #name{
+        margin-left: 35px;
+    }
+    .address{
+        margin-left: 5px;
+    }
+    .dobclass{
+        margin-left: 85px;
+    }
+    .pincodeclass{
+        margin-left: 75px;
+
+    }

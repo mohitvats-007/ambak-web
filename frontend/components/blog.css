@@ -1,0 +1,42 @@
+.blogcontainer{
+    display: flex;
+    padding-top: 130px;
+    justify-content: center;
+    padding-right: 0px;
+}
+.leftblogcontainer h1{
+    font-size: 22px;
+}
+.rightblogcontainerrecent{
+    font-size: 24px;
+    padding-top: 10px;
+    margin-bottom: -10px;
+    font-weight: 600;
+    color: #221E1E;
+    width: 30vw;
+    border-bottom: 0.5px solid #D3D3D3;
+    /* width: 20%; */
+    padding-bottom: 18px;
+}
+
+.leftblogcontainer{
+    background-color:#ededf9;
+    /* border-top-left-radius: 30px; Apply border radius to the top left corner */
+    /* border-top-right-radius: 30px; */
+    /* padding: 20px; */
+    margin-right: 70px;
+    border-top-left-radius: 30px; 
+    border-top-right-radius: 30px;
+    /* height: 88vh; */
+    padding-bottom: 30px;
+
+}
+img{
+       border-top-left-radius: 30px; 
+       border-top-right-radius: 30px;
+ 
+    /* border-radius: 30px; */
+}
+.rightblogcontainerline{
+    
+}

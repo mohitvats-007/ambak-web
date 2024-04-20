@@ -1,0 +1,23 @@
+.pagination{
+    /* background-color: aqua; */
+    /* paddinmarg: 20px; */
+    padding-left: 30%;
+}
+
+
+.paginationbuttons{
+    padding:  10px 20px;
+    margin: 0 5px;
+    border-radius: 15px;
+    background-color: rgb(194, 191, 191);
+    color: rgb(18, 17, 17);
+    transition: .1s;
+}
+
+
+
+.paginationbuttons:hover{
+    background-color: black;
+    /* padding:  10px 60px; */
+    color: white;
+}
