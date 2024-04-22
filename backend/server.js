@@ -36,7 +36,7 @@
         const id = req.params.id;
         console.log(`data delete on this id` + id);
         // const sql = `DELETE FROM mohit WHERE id = ?`;
-        const sql = `UPDATE mohit SET status = 1 where id = ?`; //`DELETE FROM mohit WHERE id = ?`;
+        const sql = `UPDATE mohit SET status = 0 where id = ?`; //`DELETE FROM mohit WHERE id = ?`;
  
         
         db.query(sql, id, (err, data) => {

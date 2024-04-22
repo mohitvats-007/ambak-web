@@ -15,6 +15,8 @@ function FetchData() {
       .catch((err) => console.log(err));
   },[]);
 
+
+  console.log(records);
   const lastpostindex   = currentpage*postperpage;
   const firstpostindex  = lastpostindex-postperpage;
   const currentpost     = records.slice(firstpostindex,lastpostindex)

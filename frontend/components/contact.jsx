@@ -2,6 +2,7 @@ import React, { useState,useEffect } from "react";
 import axios from "axios";
 import { v4 as uuidv4 } from 'uuid';
 import "./contact.css";
+import Paginationcontactform from "./paginationcontactform";
 
 //set the initial value in the form 
 const Contact = () => {
@@ -13,6 +14,15 @@ const Contact = () => {
     address:'',
     status:""
   })
+
+
+  // pagination states define
+
+  const [currentpage,setCurrentpage]= useState(1);
+  const [postperpage,setpostperpage]= useState(5);
+
+
+
   const [userData, setUserData] = useState(() => {
     const storedata = localStorage.getItem("userData");
     try {
@@ -50,6 +60,7 @@ const [editIndex, setEditIndex] = useState(null);
   };
 
     const submitHandler= (event)=>{
+      
   // Generate ID only when adding a new entry
   const id = editIndex !== null ? values.id : uuidv4(); 
   
@@ -115,7 +126,7 @@ console.log(id)
           method: editIndex !== null ? 'put' : 'post',
           url: requestUrl,
           data: {
-            status:'0',
+            status:'1',
             id: id, 
             name: values.name,
             email: values.email,
@@ -190,6 +201,32 @@ else{
           console.error("Error updating status:", err);
       });
 }}
+
+
+
+const lastpostindex= ((currentpage*postperpage));
+const firstpostindex= ((lastpostindex-postperpage));
+let currentpost= (userData.slice(firstpostindex,lastpostindex));
+// console.log(currentpost)
+
+
+
+const filteredData = userData.filter(userData => userData.Status == "1");
+
+// Count the number of items in the filtered data
+const countStatus1 = filteredData.length;
+
+console.log(userData.length);
+console.log(countStatus1)
+
+
+
+
+
+
+
+
+
   return (
     <>
     <form className="container" onSubmit={submitHandler}>    
@@ -228,9 +265,9 @@ else{
     </tr>
   </thead>
   <tbody>
-  {userData && userData.length > 0 ? (
-  userData.map((user, index) => (
-    user.Status == '1' ? null : (
+  {currentpost && currentpost.length > 0 ? (
+  currentpost.map((user, index) => (
+    user.Status == '0' ? null : (
       <tr key={index}>
         <th scope="row"> {index + 1}</th>
         <td>{user?.name || ""}</td>
@@ -262,6 +299,8 @@ else{
 {/* <button>Previous</button>
 <button>Previous</button>
 <button>Previous</button> */}
+
+<Paginationcontactform totalposts= {countStatus1} postperpage={postperpage} setCurrentpage={setCurrentpage}/>
     </>
   );
 };
