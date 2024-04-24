@@ -1,4 +1,5 @@
 .pagination{
+    /* bottom: 10%; */
     /* background-color: aqua; */
     /* paddinmarg: 20px; */
     /* padding-left: 30%; */
@@ -11,7 +12,7 @@
 
 .paginationbuttons{
     margin: 0 .3%;
-    padding:  10px 20px;
+    padding:  5px 17px;
     /* margin: 0 0; */
     border-radius: 15px;
     background-color: rgb(194, 191, 191);
@@ -25,4 +26,12 @@
     background-color: black;
     /* padding:  10px 60px; */
     color: white;
+}
+
+
+
+.displaynon{
+    display: none;
+    /* background-color: aqua;
+    border: 2px solid red; */
 }

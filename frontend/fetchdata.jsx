@@ -4,9 +4,10 @@ import Paginationfetchdata from "./paginationfetchdata";
 function FetchData() {
   const [records, setRecords] = useState([]);
 
+      //  state for current page 
   const [currentpage,setCurrentpage]= useState(1);
-  const [postperpage,setpostperpage]= useState(50);
 
+  const postperpage=50;
 
   useEffect(() => {
     fetch("https://jsonplaceholder.typicode.com/comments")
@@ -15,15 +16,11 @@ function FetchData() {
       .catch((err) => console.log(err));
   },[]);
 
-
   console.log(records);
   const lastpostindex   = currentpage*postperpage;
   const firstpostindex  = lastpostindex-postperpage;
   const currentpost     = records.slice(firstpostindex,lastpostindex)
   return (
-
-
-  
     <>
       <table  className="table table-drak table-striped mt-10">
   <thead>
@@ -49,9 +46,11 @@ function FetchData() {
     })}
   </tbody>
 </table>
-<Paginationfetchdata totalposts= {records.length} postperpage={postperpage} setCurrentpage={setCurrentpage}/>
+
+{/* pass props to the pagination function  */}
+
+<Paginationfetchdata totalposts= {records.length} postperpage={postperpage} setCurrentpage={setCurrentpage} currentpage={currentpage} />
     </>
-  );
-}
+     );}
 
 export default FetchData;

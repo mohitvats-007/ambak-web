@@ -16,10 +16,10 @@ const Contact = () => {
   })
 
 
-  // pagination states define
+  // Pagination -----------------State Define-----------------------------------------------
 
   const [currentpage,setCurrentpage]= useState(1);
-  const [postperpage,setpostperpage]= useState(5);
+  const postperpage=1;
 
 
 
@@ -55,9 +55,13 @@ const [editIndex, setEditIndex] = useState(null);
     return re.test(String(address).toLowerCase());
   };
   const validatephonenumber = (phonenumber) => {
-    const re = /^[0-9]{10}$/;
-    return re.test(String(phonenumber).toLowerCase());
+    // const re = /^[1-9]{10}$/;
+    const re = 
+      /^(?!.*(.)\1{9})\d{10}$/
+    return re.test(String(phonenumber));
   };
+
+    // console.log(userData);
 
     const submitHandler= (event)=>{
       
@@ -153,14 +157,12 @@ useEffect(() => {
   const fetchData = async () => {
     try {
       const response = await axios.get(`http://localhost:8081/getAllData`); 
-      
       setUserData(response.data);
     } catch (error) {
       console.error('Error fetching data:', error);
     }};
 const updateUser = (index) => {
   // e.preventDefault();  
-  
   const { id,name, email, phonenumber, address } = userData[index];
   console.log(index);
   console.log(id,"id");
@@ -182,7 +184,7 @@ const removeRow = (id, index) => {
   const confirmed = window.confirm("Are you sure you want to remove this row?");
   
   if (!confirmed) {
-      console.log("cancel")
+      // console.log("cancel")
   }
 else{
   console.log("Removing row with ID:", id);
@@ -210,22 +212,15 @@ let currentpost= (userData.slice(firstpostindex,lastpostindex));
 // console.log(currentpost)
 
 
-
+// --------------filter those data which have the status = 1
 const filteredData = userData.filter(userData => userData.Status == "1");
+// console.log(filteredData)
 
-// Count the number of items in the filtered data
+// Count the number of items 
 const countStatus1 = filteredData.length;
 
-console.log(userData.length);
-console.log(countStatus1)
-
-
-
-
-
-
-
-
+// console.log(userData.length);
+// console.log(countStatus1);
 
   return (
     <>
@@ -265,7 +260,7 @@ console.log(countStatus1)
     </tr>
   </thead>
   <tbody>
-  {currentpost && currentpost.length > 0 ? (
+  {currentpost.length > 0 ? (
   currentpost.map((user, index) => (
     user.Status == '0' ? null : (
       <tr key={index}>
@@ -274,6 +269,10 @@ console.log(countStatus1)
         <td>{user?.phonenumber || ""}</td>
         <td>{user?.email || ""}</td>
         <td>{user?.address || ""}</td>
+         {/* <td>{user.name}</td> */}
+        {/* <td>{user?.phonenumber || ""}</td>
+        <td>{user?.email || ""}</td>
+        <td>{user?.address || ""}</td> */}
         {/* <td>{user?.Status || "0"}</td> */}
         <td>
           <button onClick={() => updateUser(index)} type="button" className="btn btn-info">
@@ -296,11 +295,13 @@ console.log(countStatus1)
 )}
   </tbody>
 </table>
-{/* <button>Previous</button>
-<button>Previous</button>
-<button>Previous</button> */}
 
-<Paginationcontactform totalposts= {countStatus1} postperpage={postperpage} setCurrentpage={setCurrentpage}/>
+
+<Paginationcontactform 
+totalposts= {countStatus1}
+ postperpage={postperpage} 
+ setCurrentpage={setCurrentpage} 
+ currentpage={currentpage}/>
     </>
   );
 };
