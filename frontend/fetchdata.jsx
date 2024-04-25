@@ -1,9 +1,8 @@
-import React , { useEffect, useState } from "react";
+import React , {useEffect, useState } from "react";
 import Paginationfetchdata from "./paginationfetchdata";
 
 function FetchData() {
   const [records, setRecords] = useState([]);
-
       //  state for current page 
   const [currentpage,setCurrentpage]= useState(1);
 
@@ -17,9 +16,9 @@ function FetchData() {
   },[]);
 
   console.log(records);
-  const lastpostindex   = currentpage*postperpage;
-  const firstpostindex  = lastpostindex-postperpage;
-  const currentpost     = records.slice(firstpostindex,lastpostindex)
+  const lastpostindex  = currentpage*postperpage;
+  const firstpostindex = lastpostindex-postperpage;
+  const currentpost    = records.slice(firstpostindex,lastpostindex)
   return (
     <>
       <table  className="table table-drak table-striped mt-10">

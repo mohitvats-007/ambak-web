@@ -8,8 +8,6 @@
     /* background-color: aqua; */
     justify-content: center;
 }
-
-
 .paginationbuttons{
     margin: 0 .3%;
     padding:  5px 17px;
@@ -19,17 +17,11 @@
     color: rgb(18, 17, 17);
     transition: .1s;
 }
-
-
-
 .paginationbuttons:hover{
     background-color: black;
     /* padding:  10px 60px; */
     color: white;
 }
-
-
-
 .displaynon{
     display: none;
     /* background-color: aqua;

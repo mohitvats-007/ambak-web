@@ -15,7 +15,7 @@ const Navbar = () => {
           <li><Link className='active'to="fetchdata">API Data</Link></li>
           <li><Link className='active'to="blog">Blog</Link></li>
           {/* <li><Link className='active'to="services">Services</Link></li> */}
-          <li ><Link className='active' id='becomppartner' to="contact">Become a Partner</Link></li>
+          <li><Link className='active' id='becomppartner' to="becomepartner">Become a Partner</Link></li>
         </ul>
       </div>
     </nav>

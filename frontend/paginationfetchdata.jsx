@@ -1,5 +1,5 @@
-import React from 'react'
-import '/paginatiofetchdata.css'
+import React from 'react';
+import '/paginatiofetchdata.css';
 const paginationfetchdata = ({totalposts,postperpage,setCurrentpage,currentpage}) => {
     let pages = [];
     for(let i=1; i<=Math.ceil(totalposts/postperpage);i++){

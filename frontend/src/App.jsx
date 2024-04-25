@@ -16,9 +16,10 @@ function App() {
     <Routes>
     {/* <Route path="/" element={<Home />}/> */}
     <Route path="home" element={<Home/>}/>
+    <Route path="/" element={<Home/>}/>
     <Route path="blog" element={<Blog/>}/>
     <Route path="FetchData" element={<FetchData/>}/>
-    <Route path="contact" element={<Contact />} />
+    <Route path="becomepartner" element={<Contact />} />
       </Routes>   
     </BrowserRouter>
       {/* <Navbar/>
