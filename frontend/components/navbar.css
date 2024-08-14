@@ -2,48 +2,55 @@
     cursor: pointer;
     color: white;
 }
-*{
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
-}
+
 nav {
     display: flex;
     align-items: center;
-    justify-content: end;
-    background-color: rgb(255, 255, 255);
+    justify-content: space-between;
+    background-color: rgb(242, 242, 242);
     height: 60px;
-    padding: 40px;
+    /* width: 100%; */
+    padding: 40px 0;
     font-size: 17px;
     border: 2px solid rgb(185, 183, 183);
+    /* background-color: #6147ff; */
   }
   nav ul {
     display: flex;
+    /* justify-content: space-between; */
+  }
+  nav ul li:first-child {
+    /* background-color: #6147ff; */
+    /* padding-right: 200px; */
   }
   nav ul li {
     list-style: none;
     margin: 0px 22px;
-    padding-top: 13px;
+    padding-top: 48px;
   }
   nav ul li a {
     text-decoration: none;
     color: black;
-    font-size: 15px;
-    transition: .5s;
+    font-size: 16px;
+    transition: .2s;
   }
   #becomppartner{
     background-color: #6147ff;
     border-radius: 35px;
-    padding: 14px;
+    padding: 13px;
     color: white;  
   }
   nav ul li a:hover {
- 
-    color: #9c97f1;
+ font-weight: 600;
+    color: #6147ff;
   }
   .left {
     position: absolute;
     font-size: 1.5rem;
     transition: 0.5s;
-    left: 80px;
+    text-align: left;
+    /* left: 80px; */
+    /* margin-right: 45%; */
   }
   
   .header {
@@ -54,9 +61,59 @@ nav {
   
   .header nav {
     display: flex;
-    align-items: center;
+    align-items: center;  
   }
   
   .logo{
     width: 28%;
   }
+
+
+
+.hamburger{
+  display: none;
+  /* background-color: #28234d; */
+}
+
+@media (max-width: 970px) {
+
+  #check1:checked~  .checkbtn{
+    background-color: #28234d;
+    
+}
+  .header {
+    position: absolute;
+    width: 50%;
+    /* z-index: 1;  */
+  }
+  div .left {
+    left:10px;
+    width: 60vw;
+      /* position: relativeab; */
+      padding-right: 0;
+  }
+  .logo{
+    width: 68%;
+  }
+  
+  
+    #becomppartner{
+        display: none;
+    }
+}
+@media (max-width: 570px) {
+
+  nav ul li {
+    list-style: none;
+    margin: 0px 7px;
+    padding-top: 13px;
+  display: none;
+}
+
+
+
+
+  .hamburger{
+    display: block;
+  }
+}

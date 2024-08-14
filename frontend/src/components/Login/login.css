@@ -1,0 +1,65 @@
+.loginmaincontainer{
+    background-color: rgb(221, 215, 255);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logincontainer{
+    border: 1px solid grey;
+    border-radius: 20px;
+    text-align: center;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+}
+.loginemail{
+    display: flex;
+    justify-content: space-evenly;
+    /* background-color: aqua; */
+    margin: 20px auto;
+}
+.loginemail label{
+    width: 33.3%;
+    text-align: left;
+}
+.loginemail span{
+    color: red;
+}
+.loginemail input{
+    border: 1px solid grey;
+    width: 50.3%;
+    background-color: rgb(240, 224, 255);
+    height: 4.5vh;
+}
+
+.loginbutton{
+    height: 6vh;
+    border: 1px solid grey;
+    width: 30%;
+    margin: 20px 10px 0 0;
+    color: black;
+    background: transparent;
+    border-radius: 30px;
+    transition: .5s;
+}
+.loginbutton:hover{
+    background-color: rgb(211, 204, 254);
+  
+}
+.signupbutton{
+    height: 6vh;
+    border: 1px solid grey;
+    width: 60%;
+    margin: 20px 0;
+    color: black;
+    background: transparent;
+    border-radius: 30px;
+    transition: .5s;
+}
+.signupbutton:hover{
+    background-color: rgb(211, 204, 254);
+
+}

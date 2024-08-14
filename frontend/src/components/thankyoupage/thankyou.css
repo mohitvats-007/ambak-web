@@ -1,0 +1,26 @@
+.mainthankyoucontainer{
+    height: 100vh;
+    background-image: linear-gradient(to right,  rgba(220, 214, 246, 1),rgba(216, 244, 232, 1));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.inertnalthankyoucontainer{
+height: 30vh;
+}
+.inertnalthankyoucontainer img{
+    border: 0;
+    width: 100%;
+}
+.inertnalthankyoucontainer h1{
+    text-align: center;
+    font-size: 46px;
+    font-weight: 500;
+}
+.inertnalthankyoucontainer p{
+    text-align: center;
+    /* background-color: aqua; */
+    width: 90%;
+    font-size: 18px;
+    word-wrap: normal;
+}

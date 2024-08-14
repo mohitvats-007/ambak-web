@@ -1,0 +1,341 @@
+h1{
+    padding-top: 4vh;
+}
+.maincalculatorcontainer{
+    height: 120vh;
+    /* display: flex; */
+    background-color: rgba(248, 247, 253, 1);
+    /* text-align: center; */
+    justify-content: center;
+}
+.topcontainer{
+    height: 100vh;
+    padding-top: 20vh;
+    width: 1280px;
+    margin: 0 auto;
+    /* background-color: antiquewhite; */
+    margin-bottom: 30px;
+}
+.emicalculaotr h1{
+    font-size: 38px;
+    font-weight: 600;
+
+}
+.parabuttoncontainer{
+    display: flex;
+    justify-content: space-between;
+}
+.paracontainer{
+    font-size: 18px;
+    width: 952px;
+}
+.buttoncontainer{
+    width: 200px;
+    height: 48px;
+    background-color: blue;
+    text-align: center;
+    /* margin-left: 50px; */
+    /* justify-content: right; */
+    border-radius: 8px;
+}
+.buttoncontainer button{
+    
+    text-decoration: none;
+    border: 0;
+    font-size: 16px;
+    font-weight: 500;
+    padding:10px 0 0 0 ;
+    color: white;
+    align-items: center;
+    background-color: blue;
+}
+
+.secondtopcontainer{
+    height: 470px;
+    margin: 0 auto ;
+    width: 1280px;
+    display: flex;
+    /* background-color: aqua; */
+}
+.changefield{
+    width: 216px;
+    height: 54px;
+    background-color:white;
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.changefield span{
+  font-size: 20px;
+  font-weight: 600;
+    
+}
+.rangecontainer{
+    height: 469px;
+    width: 610px;
+}
+.rangecontainer1{
+    width: 100%;
+    height: 33%;
+}
+.rangecontainer2{
+    width: 100%;
+    height: 33%;
+}
+.rangecontainer3{
+    width: 100%;
+    height: 33%;
+}
+
+
+.blackwhitebutton {
+    /* background-color: aqua; */
+    width: 200px;
+    height: 38px;
+    border: 1px solid rgb(220, 220, 220);
+    border-radius: 55px;
+    cursor: pointer;
+    background: linear-gradient(to right, rgb(0, 0, 0) 50%, rgb(250, 250, 250) 50%);
+    /* border-radius: 30%;
+    text-align: center;
+
+    padding: 0 0 10px 12px; */
+    padding-top: 5px;
+}
+.blackwhitebutton .yearlybutton{
+    /* border-radius: 45% 0 0 45%; */
+    /* background-color: rgb(0, 0, 0); */
+    /* text-align: center; */
+    color: white;
+    /* width: 200px; */
+    /* height: 38px; */
+    /* padding: 12px; */
+    margin-left: 17%;
+    /* padding: 10px 0 10px 12px; */
+}
+.blackwhitebutton .monthlybutton{
+    /* background-color: rgb(253, 250, 250); */
+    /* border-radius: 30%; */
+    margin-left: 12%;
+    /* text-align: center; */
+    /* padding: 10px 0 10px 12px; */
+}
+.range1{
+display: flex;
+justify-content: space-between;
+}
+
+.range2 input{
+    width: 100%;
+    height: 20px;
+}
+.range3{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.rightrangecontainer{
+    border-radius: 20px;
+    background-color: white;
+    border: 0.1px solid rgb(194, 192, 192);
+    width: 631px;
+    margin-left: 42px;
+    /* border-radius: 20px 20px 20px 20px; */
+    display: flex;
+}
+.maincirclecontainer{
+    border-radius:20px 0px  0px  20px;
+    width: 50%;
+    /* width: 292px; */
+    background-color: 
+    rgba(232, 229, 255, 1);
+    /* background-color: aqua; */
+}
+.topcirclecontainer p{
+    height: 18px;
+    /* background-color: aquamarine; */
+    margin: 0 auto;
+    padding-top: 22%;
+    font-size: 16px;
+    /* background-color: aqua; */
+    font-weight: 400;
+    width: 168px;    
+}
+.rightmonthlycontainer{
+
+    width: 50%;
+}
+.rightmonthlycontainer1{
+    height: 33%;
+    border-bottom: 1px solid rgb(208, 206, 206);
+}
+.rightmonthlycontainer2{
+    border-bottom: 1px solid rgb(208, 206, 206);
+    height: 33%;
+}
+.rightmonthlycontainer3{
+    height: 33%;
+}
+.textfieldcontain{
+    padding-left: 12%;
+    padding-top: 6%;
+    font-size: 18px;
+    font-weight: 400;
+}
+.amountfieldcontainer span{
+    padding-left: 52%;
+    margin-top: 4%;
+    font-size: 22px;
+    font-weight: 500;
+}
+/* ------------------------------------------------------- */
+.table-container {
+    width: 1280px;
+    padding-top: 30vh;
+    height: 100vh;
+    margin: auto;
+  }
+  
+  table {
+    width: 100%;
+    /* border-collapse: collapse; */
+    /* margin-bottom: 20px; */
+    border-spacing: 0; /* Remove gap between table columns */
+  }
+  
+  th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+  }
+  
+  button {
+    padding: 2px 3px;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+.logout{
+    background-color: rgb(247, 64, 64);
+}
+
+
+.laascontain{
+    align-items: right;
+}
+.loan-table {
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid #c2c2c2;
+}
+
+.loan-table th,
+.loan-table td {
+    padding: 4px;
+}
+.loan-table tbody tr td{
+    border: 0;
+}
+
+.loan-table th {
+    border: none;
+    background-color: rgba(44, 39, 66, 1);
+    color: white;
+    /* border-radius: 4px; */
+}
+.loan-table {
+    border-radius: 1px 12px 12px 12px;
+}
+
+
+
+.table-container {
+    overflow-x: auto;
+  }
+  .partnerrow{
+    background-color: #d8ebfe;
+  }
+  .subpartnerrow{
+    background-color: rgb(253, 241, 216);
+  }
+  .childpartrow{
+    background-color: rgb(214, 251, 214);
+  }
+
+
+
+
+
+
+
+
+
+
+  .popup-form {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    z-index: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+  .imagepopup-form {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(41, 41, 41, 0.8);
+    display: flex;
+    z-index: 10000;
+    justify-content: center;
+    align-items: center;
+}
+
+.IMGpopup-inner {
+    background-color: rgb(164, 164, 164);
+    padding: 20px;
+    border-radius: 10px;
+    width: 850px;
+    /* height: 350px; */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+.carousel-container {
+    height: 500px; /* Set the desired height */
+  }
+  
+  .carousel-container .carousel .slide {
+    height: 100%; /* Make sure slides take full height */
+  }
+  .carousel-container .carousel .slide img {
+    height: 100%; /* Ensure images take full height */
+    object-fit: cover; /* Cover to maintain aspect ratio */
+  }
+.popup-inner {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 550px;
+    /* height: 350px; */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.radio_cross_cont {
+    display: flex;
+    /* height: 500px; */
+    justify-content: space-between;
+}
+.hiddeninput{
+    display: none;
+}

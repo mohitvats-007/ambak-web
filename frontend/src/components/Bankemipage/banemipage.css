@@ -1,0 +1,128 @@
+.mainbnkemicontainer{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+  justify-content: center;
+    background-image: linear-gradient(to right,rgba(220, 214, 246, 1),rgba(216, 244, 232, 1));
+    /* align-items: center; */
+    padding-top: 12%;
+}
+.topcontainr{
+    width: 1280px;
+    display: flex;
+    margin-bottom: 2%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.lefttop div img{
+    margin-right: 25px;
+}
+.lefttop div{
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.righttop p{
+font-size: 20px;
+font-weight: 500;
+}
+.lefttop{
+    display: flex;
+}
+.midcontainer{
+    background-color: aliceblue;
+    border-radius: 15px;
+    width: 1280px;
+    height: 200px;
+    align-items: center;
+    /* display: flex; */
+    flex-direction: row; 
+    
+}
+.midinnerTopcontainer{
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    /* background-color: aqua; */
+    border-bottom: 1px solid rgb(206, 206, 206);
+    padding-top: 52px;
+    }
+
+    .banimg img{
+          border-radius: 0;
+    }
+.amountsection{
+    height: 44px;
+    width:  134px;
+    /* background-color: aqua; */
+}
+.emiamtsection{
+    width: 90px;
+    /* background-color: aqua; */
+}
+
+.maxamt{
+    font-size: 16px;
+    font-weight: 400;
+}
+.amt{
+
+    font-size: 20px;
+    font-weight: 500;
+}
+.emiamt{
+
+    font-size: 20px;
+    font-weight: 500;
+}
+.emibatch{
+    font-size: 16px;
+    font-weight: 400;
+}
+.prcntsection{
+    width: 100px;
+    /* background-color: aqua; */
+
+    margin-left: 52px;
+}
+
+.prcntamt{
+    font-size: 20px;
+    font-weight: 500;
+}
+.roi{
+    font-size: 16px;
+    font-weight: 400;
+}
+.prcntsection .onwards{
+    margin-left: 52px;
+    font-size: 12px;
+    font-weight: 300;
+    /* margin-top: 12px; */
+}
+.midinnerbottomcontainer{
+    margin-top: 30px;
+    margin-left: 50px;
+}
+.aplybtnsection button{
+    width: 150px;
+    height: 42px;
+    font-size: 12px;
+    font-weight: 500;
+    border: 0;
+    color: white;
+    border-radius: 6.23px;
+    background-color: 
+    rgba(97, 71, 255, 1);
+}
+
+
+.midinnerbottomcontainer ul li{
+    font-size: 18;
+    font-weight: 400;
+}
+.lowercontainer p{
+    margin-top: 12%;
+}

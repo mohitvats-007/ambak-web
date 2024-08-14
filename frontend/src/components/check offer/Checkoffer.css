@@ -1,0 +1,423 @@
+.maincheckoffercontainer{
+    background-image: linear-gradient(to right,  rgba(220, 214, 246, 1),rgba(216, 244, 232, 1));
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* background-color: rgb(31, 187, 187); */
+}
+.checkoffercontainer{
+    background-color: rgb(254, 254, 254);
+    border-radius: 20px;
+    height: 460px;    
+    width: 1279px;
+    border-radius: 20px;
+}
+
+.leftcheckoffer .smallimage{
+    display: none;
+}
+
+
+.innercheckoffercontainer{
+    background-image: linear-gradient(to right,  rgba(220, 214, 246, 1),rgba(216, 244, 232, 1));
+    display: flex;
+    /* text-align: center; */
+}
+.mainrightcheckoffer{
+    
+    /* width: 90%; */
+    width: 879px;
+    /* height: 100vh; */
+    height: 460px;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    background-color: rgb(255, 255, 255);
+}
+.rightcheckoffer{
+    /* text-align: center; */
+/* display: flex;
+flex-direction: column; */
+/* align-items: flex-start; */
+position: relative;
+/* justify-content: space-evenly; */
+}
+.headincheckoffercontainer{
+    display: flex;
+    width: 809px;
+    /* margin-bottom: 12px; */
+    margin-left: 2%;
+    /* background-color: rgb(28, 142, 104); */
+    /* justify-content: space-between; */
+    /* martop: 0; */
+    margin-bottom: 10%;
+    /* flex-direction: column; */
+    /* width: 245px; */
+    height: 17px;
+}
+
+.arrowbutton button{
+cursor: pointer;
+background-color: white;
+border: 0;
+}
+.headingckofr h6{
+ width: 245px;
+ height: 17px;
+ font-size: 24px;
+ font-weight: 600;
+ margin-left: 12%;
+}
+.selectoptioncontain{
+    display: flex;
+    margin-bottom: 6%;
+    width: 780px;
+    justify-content: space-around;
+    height: 66px;
+}
+.leftselectbutton button{
+    height: 66px;
+    width: 360px;
+    font-size: 18px;
+    font-weight: 500;
+    color: black;
+    border-radius: 10px;
+    background-color: white;
+    border: 1px solid grey;
+}
+.rightselectbutton button{
+    font-size: 18px;
+    color: black;
+    background-color: white;
+    font-weight: 500;
+    border: 1px solid grey;
+    height: 66px;
+    /* margin-left: 2px; */
+    /* gap: 73px; */
+    width: 360px;
+    border-radius: 10px;
+}
+.inputcontainer{
+    margin-bottom: 2%;
+    /* background-color: aqua; */
+    /* display: flex; */
+    display: flex;
+    
+}
+.inputcontainer  div{
+    width: 100%;
+    margin-left: 1.2%;
+    height: 76px;
+    border-radius: 10px;
+    /* background-color: rgb(82, 151, 151); */
+    margin-right: 0%;
+    
+}
+.inputcontainer div input{
+    border: 1px solid grey;
+    width: 360px;
+    height: 76px;
+    /* padding-bottom: 12px; */
+    padding-left: 3%;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 10px;
+    margin-right: 42%;
+    
+}
+.inputcontainer div button{
+    font-size: 18px;
+    background-color: white;
+    font-weight: 500;
+    color: black;
+    border: 1px solid grey;
+    height: 66px;
+    /* margin-left: 2px; */
+    /* gap: 73px; */
+    width: 360px;
+    border-radius: 10px;
+}
+    
+
+ .annulincmm {
+  
+    position: absolute;
+   margin-top: 4.5%;
+   margin-left: 2.9%;
+    /* width: 500px; */
+    color: grey;
+    font-size: 15px;
+    font-weight: 400;
+    background-color: rgb(255, 255, 255);
+    font-size: 16px;
+  
+    /* z-index: 1000; */
+    
+    
+}
+.nextbuttoncontain button{
+    width: 185px;
+    height: 52px;
+    border-radius: 10px;background-color: 
+    rgba(97, 71, 255, 1);
+    color: white;
+    margin-left: 73%;
+    margin-bottom: 6%;
+    font-size: 16px;
+    font-weight: 500;
+    border: 0;
+
+
+}
+.leftselectbutton .selected {
+ border: 2px solid blue;
+ color: rgb(118, 155, 235);
+}
+.inputcontainer .selected{
+    border: 2px solid blue;
+    color: rgb(118, 155, 235);
+   }
+.rightselectbutton .selected {
+    border: 2px solid blue;
+    color: rgb(118, 155, 235);
+}
+@media  screen and (max-width: 1250px) {
+    .maincheckoffercontainer{
+        background-image: linear-gradient(to right,  rgba(220, 214, 246, 1),rgba(216, 244, 232, 1));
+        /* background-image: none; */
+        /* width: 100vw; */
+        height: 100vh;
+        width: 100%;
+        margin-bottom: 40%;
+        display: flex;
+        /* margin-top: 52%; */
+        /* justify-content: center; */
+        /* align-items: center; */
+        /* flex-direction: row; */
+        /* background-color: rgb(31, 187, 187); */
+    }
+    .checkoffercontainer{
+        background-color: rgb(254, 254, 254);
+        border-radius: 20px;
+        height: 460px;   
+
+       width: 100%;
+    }
+    
+    
+    
+    .innercheckoffercontainer{
+        background-image: linear-gradient(to right,  rgba(220, 214, 246, 1),rgba(216, 244, 232, 1));
+        /* background-image: none; */
+        display: flex;
+        /* background-color: aqua; */
+        flex-direction: column;
+        width: 100%
+        /* text-align: center; */
+    }
+    .leftcheckoffer{
+        /* background-color: aqua; */
+        /* width: 100vw; */
+        height: 35vh;
+        width: 100%;
+        /* height: 50%; */
+
+    text-align: center;
+    }
+    .leftcheckoffer .bigimage{
+        display: none;
+    }
+    
+    .leftcheckoffer .smallimage{
+        display: inline-block;
+        height: 270px;
+        text-align: center;
+        /* margin-left: 12px; */
+    }
+    
+    
+    .mainrightcheckoffer{
+        
+        width: 100%;
+        /* width: 879px; */
+        /* height: 100vh; */
+        /* height: 460px;     */
+        height: 100%;    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 30px 30px 0 0;
+        background-color: rgb(255, 255, 255);
+    }
+    .rightcheckoffer{
+        width: 100%;
+        /* width: 60vw; */
+        /* text-align: center; */
+    /* display: flex;
+    flex-direction: column; */
+    /* align-items: flex-start; */
+    position: relative;
+    /* justify-content: space-evenly; */
+    }
+    .headincheckoffercontainer{
+        display: flex;
+        /* width: 809px; */
+        width: 100%;
+        /* margin-bottom: 12px; */
+        margin-left: 2%;
+        /* background-color: rgb(28, 142, 104); */
+        /* justify-content: space-between; */
+        /* martop: 0; */
+        margin-bottom: 10%;
+        margin-top: 10%;
+        /* flex-direction: column; */
+        /* width: 245px; */
+        height: 17px;
+    }
+    
+    .arrowbutton button{
+    cursor: pointer;
+    background-color: white;
+    border: 0;
+    }
+    .headingckofr h6{
+     width: 245px;
+     height: 17px;
+     font-size: 24px;
+     font-weight: 600;
+     margin-left: 12%;
+    }
+    .selectoptioncontain{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 30%;
+        /* width: 780px; */
+        width: 100%;
+        justify-content: space-around;
+        height: 66px;
+        padding: 0% 0;
+    }
+    .leftselectbutton button{
+        height: 66px;
+        margin-bottom: 10%;
+        width: 100%;
+        /* width: 360px; */
+        font-size: 18px;
+        font-weight: 500;
+        border-radius: 10px;
+        background-color: white;
+        border: 1px solid grey;
+    }
+    .leftcheckoffer{
+        
+        width: 100%;
+    }
+    .rightcheckoffer{
+        width: 100%;
+        
+    }
+    .leftselectbutton{
+
+        width: 100%;
+    }
+    .rightselectbutton{
+        width: 100%;
+    }
+    .rightselectbutton button{
+        font-size: 18px;
+        background-color: white;
+        font-weight: 500;
+        border: 1px solid grey;
+        width: 100%;
+        /* padding-top: 12%; */
+        height: 66px;
+        /* margin-left: 2px; */
+        /* gap: 73px; */
+        /* width: 360px; */
+        border-radius: 10px;
+    }
+    .inputcontainer{
+        /* width: 100%; */
+        margin-bottom: 2%;
+        /* background-color: aqua; */
+        /* display: flex; */
+        
+    }
+    .inputcontainer  div{
+        /* width: 760px; */
+        width: 100%;
+        
+        margin-left: 1%;
+        height: 76px;
+        border-radius: 10px;
+        /* background-color: rgb(82, 151, 151); */
+        margin-right: 102%;
+        
+    }
+    .inputcontainer div input{
+        margin-top: 5%;
+        border: 1px solid grey;
+        /* width: 360px; */
+        width: 100%;
+        text-align: center;
+        height: 72px;
+        /* padding-bottom: 12px; */
+        /* padding-right: 50%; */
+        font-size: 20px;
+        font-weight: 600;
+        border-radius: 10px;
+        margin-right: 0%;
+        
+    }
+     .annulincmm {
+      display: none;
+        position: absolute;
+       padding: 0%;
+       margin-left: 10.9%;
+       margin-bottom: 10%;
+        /* width: 500px; */
+        color: grey;
+        font-size: 15px;
+        font-weight: 400;
+        background-color: rgb(255, 255, 255);
+        font-size: 16px;
+      
+        z-index: 1000;
+        
+        
+    }
+    .nextbuttoncontain{
+        display: flex;
+        justify-content: center;
+    }
+    .nextbuttoncontain button{
+        /* width: 185px; */
+        width: 60%;
+        align-items: center;
+        justify-content: center;
+        height: 52px;
+        margin-top: 10%;
+        border-radius: 10px;background-color: 
+        rgba(97, 71, 255, 1);
+        color: white;
+        margin-left:    0%;
+        margin-bottom: 6%;
+        font-size: 16px;
+        font-weight: 500;
+        border: 0;
+    
+    
+    }
+    .leftselectbutton .selected {
+     border: 2px solid blue;
+     color: rgb(118, 155, 235);
+    }
+    .rightselectbutton .selected {
+        border: 2px solid blue;
+        color: rgb(118, 155, 235);
+    }
+}

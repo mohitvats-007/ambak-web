@@ -1,0 +1,498 @@
+/* *{
+    font-family: "Poppins", sans-serif;
+} */
+
+.bannercontainer{
+    /* background: linear-gradient(97.02deg, #ECE7FE 0%, #EAFAF3 102.86%);
+    justify-content: space-between;
+    display: flex;
+   
+    width: 1800px; */
+
+    /* height: 100vh; */
+    width: 100vw;
+    /* background-color: rgb(109, 85, 53); */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 6%;
+    display: flex;
+    flex-direction: row;
+}
+.leftbannercontainer{
+    padding: 0 259px 0 0px ;
+    width: 48vw;
+    margin: 0% 0 3% 0;
+}
+.error-message{
+    color: red;
+    /* height: 12px; */
+    width: 100%;
+    margin-right: 152px;
+}
+
+.bannerheading{
+    width: 600px;
+}
+.bannerheading h1{
+    text-align: left;
+   font-size: 46px;
+   font-weight: 600;
+   width: 623px;
+   /* height: 87px; */
+   
+}
+.bannerpara{
+    text-align: left;
+    color: rgba(33, 31, 50, 1);
+    width: 738px;
+    height: 43px;
+    margin: 40px 0 ;
+    font-size: 18px;
+}
+.bannermobileinput input{
+    width: 412px;
+    height: 66px;
+    border-radius: 10px;
+    border: 1px solid rgba(186, 183, 183, 1);
+    padding-left: 35px;
+}
+.bannermobileinput input::placeholder{
+    font-size: 20px;
+    line-height: 24px;
+    width: 208px;
+}
+.bannergetofferbutton button{
+    width: 210px;
+    height: 66px;
+    color: white;
+    border-radius: 10px;
+     background: rgba(97, 71, 255, 1);
+    font-size: 20px;
+    /* border: 1.5px thin rgb(169, 37, 37) ; */
+    border: 0;
+}
+.mobilebuttoncontainer{
+    width: 644px;
+    display: flex;
+    height: 66px;
+    /* background-color: aqua; */
+    justify-content: space-between;
+    /* flex-direction: row; */
+}
+.mobilebuttoncontainer input{
+    font-size: 26px;
+     
+} 
+
+.rightbannercontainer{
+    margin-top: 5%;
+    margin-right: 12px;
+
+}
+.bannerimage img{
+    height: 429px;
+    width: 520px;
+    /* background-color: aqua; */
+}
+
+
+
+/* ---------------------------------------------------------- */
+
+
+
+
+.containerx{
+    height: 80vh;
+    width: 100vw;
+    margin-top: 62px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+.advantage{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    /* bottom: 12px; */
+}
+.advantageheading{
+/* font-size: 20px; */
+}
+.innercontainer{
+    height: 50vh;
+    width: 90vw;
+    /* margin-top: 12px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.b1{
+    height: 304px;
+    width: 290px;
+    margin: 15px;
+    border-radius: 20px;
+}
+
+.b1data{
+    padding: 30px 0 0 12px;
+}
+.headingindiv h2{
+    padding: 10px 0;
+    font-size: 20px;
+    font-weight: 500px;
+    height: 42px;
+    margin-top: 20px;
+}
+.paraindiv p{
+    font-size: 14px;
+    font-weight: 400px;
+    margin-top: 32px;
+    height: 40px;
+    padding: 10px 0;
+}
+
+/* ------------------------------ credit score css-------------------------------------------> */
+.sectionreport {
+    width: 100%;
+    height: 70vh;
+    /* margin-bottom: 12px; */
+    /* background: linear-gradient( to right,rgba(234, 250, 243, 1),rgba(236, 231, 254, 1)); */
+}
+.creditreport {
+    /* margin-top: 120px; */
+    display: flex;
+    /* background-color: brown; */
+    justify-content: space-between;
+    margin-bottom: 372px;
+}
+.freereport {
+    margin-top: 100px;
+    width: 522px;
+    height: 303px;
+}
+.creditreport h1 {
+    font-size: 38px;
+    font-weight: 600;
+}
+.freereport p {
+    font-size: 16px;
+    font-weight: 400;
+    opacity: 100%;
+    color: rgba(33, 31, 50, 1);
+    width: 471px;
+}
+.scoreimg {
+    margin-top: 100px;
+    width: 590px;
+    height: 320px;
+}
+.star {
+    /* width: 470px; */
+    display: flex;
+    flex-direction: column;
+}
+.star > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 10px;
+    margin-top: 15px;
+}
+.inline {
+    display: inline;
+}
+.inline p {
+    font-size: 18px;
+    color: rgba(0, 0, 0, 1);
+    font-weight: 400;
+    margin: 0px;
+}
+.creditscore {
+    width: 220px;
+    /* height: 54px; */
+    margin: 0px;
+}
+.creditscore button {
+    width: 220px;
+    height: 54px;
+    margin-top: 30px;
+    cursor: pointer;
+    color: rgba(97, 71, 255, 1);
+    border-radius: 12px;
+    background-color: rgba(97, 71, 255, 1);
+    border: 0px solid rgba(97, 71, 255, 1);
+}
+.creditscorebtn a {
+    color: rgba(255, 255, 255, 1);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 15px;
+    align-items: center;
+}
+
+
+@media  screen and (max-width: 1250px) {
+    
+    .bannercontainer{
+        /* background: linear-gradient(97.02deg, #ECE7FE 0%, #EAFAF3 102.86%);
+        justify-content: space-between;
+        display: flex;
+       
+        width: 1800px; */
+    
+        /* height: 100vh; */
+        width: 100vw;
+        /* background-color: aqua; */
+        /* background-color: rgb(109, 85, 53); */
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .leftbannercontainer{
+        padding: 100px 2px 0 0px ;
+        width: 100%;
+        margin: 0% 0 0 0;
+    }
+    .error-message{
+        color: red;
+        /* height: 12px; */
+        width: 100%;
+        margin-right: 152px;
+    }
+    
+    .bannerheading{
+        width: 100%;
+    }
+    .bannerheading h1{
+       font-size: 30px;
+       font-weight: 600;
+       width: 100%;
+       /* height: 87px; */
+       
+    }
+    .bannerpara{
+        color: rgba(33, 31, 50, 1);
+        width: 95%;
+        height: 43px;
+        margin: 40px 0 ;
+        font-size: 18px;
+    }
+    .bannermobileinput input{
+        width: 100%;
+        /* width: 412px; */
+        height: 66px;
+        border-radius: 10px;
+        border: 1px solid rgba(186, 183, 183, 1);
+        padding-left: 35px;
+    }
+    .bannermobileinput input::placeholder{
+        font-size: 20px;
+        line-height: 24px;
+        width: 208px;
+    }
+    .bannergetofferbutton button{
+        /* width: 100%; */
+        width: 210px;
+        height: 66px;
+        color: white;
+        border-radius: 10px;
+         background: rgba(97, 71, 255, 1);
+         margin-top:5%;
+        font-size: 20px;
+        /* border: 1.5px thin rgb(169, 37, 37) ; */
+        border: 0;
+    }
+    .mobilebuttoncontainer{
+        width: 100%;
+        display: flex;
+        /* height: 106px; */
+        /* background-color: aqua; */
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    .mobilebuttoncontainer input{
+        font-size: 26px;
+         
+    }
+    
+    .rightbannercontainer{
+        margin-top:15%;
+        margin-right: 0px;
+    
+    }
+    .bannerimage img{
+        /* height: 429px; */
+        /* width: 520px; */
+        width: 100%;
+        /* background-color: aqua; */
+    }
+    
+    
+    
+    /* ---------------------------------------------------------- */
+    
+    
+    
+    
+    .containerx{
+        height: 80vh;
+        width: 100vw;
+        margin-top: 62px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    
+    
+    
+    .advantage{
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: center;
+        /* bottom: 12px; */
+    }
+    .advantageheading{
+    /* font-size: 20px; */
+    }
+    .innercontainer{
+        height: 40vh;
+        /* width: 90vw; */
+        width: 100%;
+        /* margin-top: 12px; */
+        display: flex;
+        justify-content: center;
+        /* flex-direction: column; */
+        align-items: center;
+    }
+    .b1{
+        height: 204px;
+        width: 100%;
+        /* width: 290px; */
+        margin: 15px;
+        border-radius: 20px;
+    }
+    
+    .b1data{
+        padding: 10px 0 0 0px;
+    }
+    .headingindiv h2{
+        padding: 10px 0;
+        font-size: 20px;
+        font-weight: 500px;
+        height: 42px;
+        margin-top: 20px;
+        width: 100%;
+    }
+    .paraindiv p{
+        font-size: 14px;
+        width: 100%;
+        text-align: center;
+        font-weight: 400px;
+        margin-top: 32px;
+        height: 40px;
+        padding: 10px 0;
+    }
+    
+    /* ------------------------------ credit score css-------------------------------------------> */
+    .sectionreport {
+        width: 100%;
+        height: 110vh;
+        /* margin-bottom: 12px; */
+        /* background: linear-gradient( to right,rgba(234, 250, 243, 1),rgba(236, 231, 254, 1)); */
+    }
+    .creditreport {
+        /* margin-top: 120px; */
+        display: flex;
+        /* background-color: brown; */
+        justify-content: space-between;
+        
+        flex-direction: column;
+        margin-bottom: 2px;
+    }
+    .freereport {
+        margin-top: 100px;
+        width: 100%;
+        /* width: 522px; */
+        height: 303px;
+    }
+    .creditreport h1 {
+        font-size: 38px;
+        font-weight: 600;
+    }
+    .freereport p {
+        font-size: 16px;
+        font-weight: 400;
+        opacity: 100%;
+        color: rgba(33, 31, 50, 1);
+        width: 100%;
+    }
+    .scoreimg img {
+        /* margin-top: 100px; */
+        width: 100%;
+        /* height: 320px; */
+    }
+    .scoreimg  {
+        /* margin-top: 100px; */
+        width: 100%;
+        /* height: 320px; */
+    }
+    .star {
+        /* width: 470px; */
+        display: flex;
+        flex-direction: column;
+    }
+    .star > div {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        column-gap: 10px;
+        margin-top: 15px;
+    }
+    .inline {
+        display: inline;
+    }
+    .inline p {
+        font-size: 18px;
+        color: rgba(0, 0, 0, 1);
+        font-weight: 400;
+        margin: 0px;
+    }
+    .creditscore {
+        /* width: 220px; */
+        /* height: 54px; */
+        margin: 0px;
+        width: 100%;
+    }
+    .creditscore button {
+        /* width: 220px; */
+        width: 100%;
+        height: 54px;
+        margin-top: 30px;
+        cursor: pointer;
+        color: rgba(97, 71, 255, 1);
+        border-radius: 12px;
+        background-color: rgba(97, 71, 255, 1);
+        border: 0px solid rgba(97, 71, 255, 1);
+    }
+    .creditscorebtn a {
+        width: 100%;
+        color: rgba(255, 255, 255, 1);
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 15px;
+        align-items: center;
+    }
+}
