@@ -1,37 +1,89 @@
-import React from "react";
-import "./blog.css";
+import React from 'react';
+import Highcharts from 'highcharts';
+import HighchartsReact from 'highcharts-react-official';
+import HighchartsMore from 'highcharts/highcharts-more';
+import VariablePie from 'highcharts/modules/variable-pie';
 
-const blog = () => {
+HighchartsMore(Highcharts);
+VariablePie(Highcharts);
+
+const Blog = () => {
+  const options = {
+    chart: {
+      type: 'variablepie',
+    },
+    title: {
+      text: 'Loan Distribution by Interest and Principal Amount',
+      align: 'left',
+    },
+    tooltip: {
+      enabled: false,
+    },
+    credits: {
+      enabled: false // Disable the Highcharts watermark
+    },
+    series: [
+      {
+        minPointSize: 10,
+        innerSize: '0%',
+        zMin: 0,
+        name: 'Loan Distribution',
+        borderRadius: 0,
+        data: [
+          { name: 'Principal', y: 551695, z: 119 },
+          { name: 'Interest', y: 505992, z: 92 },
+        ],
+        colors: ['#1FC593', '#4caefe'],
+        dataLabels: {
+          enabled: true,
+          format: '{point.percentage:.1f}%',
+          style: {
+            textOutline: 'none',
+            color: 'white',
+          },
+          distance: -90,
+          align: 'center',
+          verticalAlign: 'middle',
+        },
+        states: {
+          hover: {
+            enabled: true,
+          },
+        },
+      },
+    ],
+  };
+
   return (
     <>
       <div className="blogcontainer">
         <div className="leftblogcontainer">
           <img
-            width={"506px"}
-            src="https://ambak.com/blog/wp-content/uploads/2024/02/FutureOfHomeLoans_India.png"
-            alt=""/>
-          <h1>The Future of Home Finance in India | The <br /> Opportunities that Lie Ahead</h1>
-          <span>Rameshwar Gupta |</span><span>3 min</span>
+            width={'506px'}
+            alt="Blog Image"
+          />
+          
         </div>
 
         <div className="rightblogcontainer">
-         <div className="rightblogcontainerrecent">
-          Recent Articles
-        
-          <div className="rightsidediv">
-            <span>NEWS AND INSIGHTS</span>
-            <img src="https://ambak.com/blog/wp-content/themes/mytheme/images/time.png" alt="" />
-            <span>3 Min</span>
+          <div className="rightblogcontainerrecent">
+            <div>
+              <HighchartsReact highcharts={Highcharts} options={options} />
+            </div>
+            <div className="rightsidediv">
+              <img
+                src="https://ambak.com/blog/wp-content/themes/mytheme/images/time.png"
+                alt="Time Icon"
+              />
+            </div>
+            
+            <div>
+            </div>
           </div>
-          <h> The Future of Home Finance in India | The Opportunities that Lie Ahead </h>
-          <div>
-            <div>Rameshwergupta</div>
-          </div>
-         </div>
         </div>
       </div>
     </>
   );
 };
 
-export default blog;
+export default Blog;

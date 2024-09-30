@@ -70,14 +70,14 @@ const Calculators = () => {
   };
   const toggleinactive = async (partnerId) => {
     const userreply = confirm("Are you sure to Inactive this partner ?");
-    if (userreply) {
+    if (userreply){
       try {
-        await axios.put("http://localhost:8081/updatepartner", {
+        await axios.put("http://localhost:8081/updatepartner",{
           partner_id: partnerId,
           status: 0,
         });
         const updatedPartners = Partnerdta.map((partner) =>
-          partner.id === partnerId ? { ...partner, status: 0 } : partner
+          partner.id === partnerId ? {...partner, status: 0 } : partner
         );
         setPartnerdta(updatedPartners);
         await axios.put("http://localhost:8081/runAll");
@@ -105,7 +105,7 @@ const Calculators = () => {
       console.error("Error updating subpartner:", error);
     }
     console.log(selectedNewPartnerId);
-    setShowPopup(false);
+    setShowPopup(false); 
   };
 
   const getToggleButton = (index) => {
@@ -728,7 +728,7 @@ const Calculators = () => {
                           type="file"
                           id="Pan_img"
                           multiple
-                          onChange={(e) => handleFileChange(e, "Pan_img")}
+                          onChange={(e) => handleFileChange(e,"Pan_img")}
                         />
                         <button
                           onClick={() =>

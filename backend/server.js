@@ -192,7 +192,7 @@ app.post('/Ambak_partner', (req, res) => {            //routes
         return res.status(200).json({ message: 'Signup successful' });
     });
 });
-// -----------------Sub_Partners API------------------------------------
+// -----------------Sub_Partners API--------------------------------->
 
 app.post('/Ambak_Sub_partner', (req, res) => {            //routes
     const { partner_id, name, email, phone } = req.body;
@@ -208,7 +208,7 @@ app.post('/Ambak_Sub_partner', (req, res) => {            //routes
         return res.status(200).json({ message: 'ADD successful' });
     });
 });
-// -----------------Child_Partners API-------------------------------------
+// -----------------Child_Partners API------------------------------->
 
 app.post('/Ambak_Child_partner', (req, res) => {            //routes
     const { sub_part_id, name, email, phone } = req.body;
@@ -217,9 +217,9 @@ app.post('/Ambak_Child_partner', (req, res) => {            //routes
     db_Part.query(sql, values, (err, data) => {
         if (err) {
             console.error('Database error:', err);
-            return res.status(500).json({ error: 'Database error' });
+            return res.status(500).json({error: 'Database error'});
         } console.log('Data inserted successfully:', data);
-        return res.status(200).json({ message: 'ADD successful' });
+        return res.status(200).json({message: 'ADD successful'});
     });
 });
 // -----------------Update subpartner API-------------------------------->
@@ -252,7 +252,7 @@ app.listen(8081, () => {
     console.log('Server running on port 8081');
 });
 
-// ----------------------API to update businessdeatils of partner--------------------------->
+// ----------------------API to update businessdeatils of partner------------------>
 app.put('/update/business/details', (req, res) => {
     const { aadharno, panno, gstno, partner_id } = req.body;
     const query = `
@@ -318,7 +318,6 @@ const storage = multer.diskStorage({
 });
 // console.log(file)
 const upload = multer({ storage: storage });
-
 // Endpoint to handle multiple image uploads
 app.post('/uploadimg', upload.array('images', 10), (req, res) => {
     if (!req.files || req.files.length === 0) {
@@ -327,7 +326,7 @@ app.post('/uploadimg', upload.array('images', 10), (req, res) => {
     const { partner_id, imageType } = req.body;
     if (!partner_id || !imageType) {
         return res.status(400).json({ Message: "Missing partner_id or imageType" });
-    }
+    } 
     const images = req.files.map(file => file.filename).join(',');
     console.log("Images:", images);
     console.log("Partner ID:", partner_id);
@@ -521,7 +520,7 @@ const updatePartnerId = (activePartnerId, partnerIdToUpdate) => {
         });
     });
 };
-//  update subpartners
+//  Update subpartners
 app.put('/runAll', async (req, res) => {
     try {
         const inactivePartnerData = await getInactivePartner();
@@ -542,3 +541,49 @@ app.put('/runAll', async (req, res) => {
         return res.status(500).json({ error: 'Internal server error' });
     }
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+// -------------------------aniket project ---------------------------------------
+
+
+
+
+
+// Load the JSON data
+const indianLocations = require('./inidanlocation.json');
+
+// Set up the route to serve the data
+app.get('/api/locations', (req, res) => {
+  res.json(indianLocations);
+}); 
+
+// --------------------------------------------------------------
+
+app.post('/submit-form', (req, res) => {
+    const { typeofpartner, name, email, mobile, state, district, message } = req.body;
+
+    const sql = `INSERT INTO partnerwithus (typeofpartner, name, email, mobile, state, district, message) VALUES (?, ?, ?, ?, ?, ?, ?)`;
+    const values = [typeofpartner, name, email, mobile, state, district, message];
+
+    db_Part.query(sql, values, (err, data) => {
+        if (err) {
+            console.error('Database error:', err);
+            return res.status(500).json({ error: 'Database error' });
+        }
+        console.log('Data inserted successfully:', data);
+        return res.status(200).json({ message: 'Signup successful' });
+    });
+});
+
+   
